@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adaptive Cards Workbench</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/adaptivecards.js" defer></script>
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <header><p class="eyebrow">Standard contracts. Shared artifact.</p><h1 id="title">Adaptive Cards Workbench</h1><p id="identity"></p></header>
+  <p id="status" role="status" aria-live="polite">Connecting...</p>
+  <p id="error" role="alert" hidden></p>
+  <p id="conflict" hidden>New saved evidence is available. Your local inputs are still here. Review the latest evidence before saving or submitting.</p>
+  <fieldset id="interactive">
+    <legend class="sr-only">Artifact workspace</legend>
+    <div class="toolbar">
+      <button id="save-draft" type="button">Save input draft</button>
+      <button id="clear-draft" type="button">Clear input draft...</button>
+      <button id="latest" type="button">Review latest, keep local inputs</button>
+      <span id="dirty"></span>
+    </div>
+    <main id="card" aria-label="Adaptive Card"></main>
+    <section aria-labelledby="handoff-title">
+      <h2 id="handoff-title">Review and return to Copilot</h2>
+      <p>Saving a draft, recalculating, or saving a review never sends a message. Only the separate, confirmed send below queues work in the owning conversation.</p>
+      <label for="reviews">Saved review</label><select id="reviews"></select>
+      <p id="review-status"></p>
+      <label for="instruction">Request for Copilot</label>
+      <input id="instruction" maxlength="1000" value="Revise the agenda using my saved choice and notes. Preserve my inputs. Do not book or contact anyone.">
+      <button id="preview" type="button">Preview exact outgoing context</button>
+      <div id="consent" hidden>
+        <label for="outgoing">Exact message, including selected artifact data</label>
+        <textarea id="outgoing" readonly rows="14"></textarea>
+        <label><input id="confirmed" type="checkbox"> I reviewed this context and want to send it to the owning Copilot session.</label>
+        <button id="send" type="button" disabled>Send to Copilot</button>
+      </div>
+    </section>
+  </fieldset>
+  <details><summary>Source, data, contracts and diagnostics</summary><pre id="source"></pre></details>
+  <footer>Local, synthetic examples. No bookings, connectors, or autonomous external actions. Markdown is displayed as plain text.</footer>
+</body>
+</html>

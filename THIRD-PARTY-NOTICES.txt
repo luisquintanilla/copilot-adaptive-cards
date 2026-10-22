@@ -1,0 +1,21 @@
+Adaptive Cards Workbench uses official browser distributions and source:
+  adaptivecards 2.11.3 (MIT)
+  adaptivecards-templating official unmodified source snapshot (MIT),
+    2.4.0-alpha.0, commit 53352bb7c9ea7bda88ad3ee2fbd18f3e0c9a2c0a
+  adaptive-expressions 4.11.0 (MIT)
+Their original licenses and bundled notices are in vendor/.
+vendor/integrity.json records exact source URLs, versions and SHA-256 digests.
+The templating source/package metadata and generated browser bundle are retained
+in vendor/. Its original MIT license is also included. It is not represented
+as the published npm 2.3.1 browser bundle.
+The unmodified Adaptive Cards 1.5 schema is from microsoft/AdaptiveCards,
+schemas/1.5.0/adaptive-card.json, under the Adaptive Cards MIT license.
+
+The server bundles ajv 8.20.0 and its runtime dependencies. Their original
+license files are copied to licenses/ in the built extension. Build and test
+tools are development-only and are not part of the installed runtime.
+The GitHub Copilot SDK is provided by the application, not redistributed.
+
+Upstream packages and their embedded third-party notices retain their
+respective copyright and license terms. The Workbench project license does
+not replace those terms.

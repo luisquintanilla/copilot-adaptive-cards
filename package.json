@@ -1,0 +1,25 @@
+{
+  "name": "copilot-adaptive-cards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standards-grounded Adaptive Cards building blocks for shared Copilot workspaces",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "test": "node scripts/check.mjs --unit",
+    "test:browser": "node tests/browser.mjs",
+    "check": "node scripts/check.mjs",
+    "package": "node scripts/check.mjs --package"
+  },
+  "dependencies": { "ajv": "8.20.0" },
+  "devDependencies": {
+    "@types/node": "24.0.0",
+    "esbuild": "0.28.2",
+    "playwright": "1.56.1",
+    "typescript": "7.0.2"
+  }
+}

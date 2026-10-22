@@ -1,0 +1,28 @@
+node_modules/
+build/
+release/
+/artifacts/
+test-results/
+
+# Local reports and private configuration
+.testagent/
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+.netrc
+.ssh/
+
+# Session data and diagnostic output
+/.copilot/
+/session-state/
+/adaptive-cards-workbench/
+/logs/
+/traces/
+/trace.zip
+playwright-report/
+blob-report/
+*.log
+*.trace
+*.har

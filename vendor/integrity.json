@@ -1,0 +1,66 @@
+[
+  {
+    "name": "adaptivecards",
+    "version": "2.11.3",
+    "file": "adaptivecards.js",
+    "url": "https://unpkg.com/adaptivecards@2.11.3/dist/adaptivecards.min.js",
+    "integrity": "sha256-Dx76rElimLBEBaPJ4ZOZg47JsggD7aRHsTbgnO/RD+Q="
+  },
+  {
+    "name": "adaptivecards",
+    "version": "2.11.3",
+    "file": "adaptivecards.LICENSE",
+    "url": "https://unpkg.com/adaptivecards@2.11.3/LICENSE",
+    "integrity": "sha256-9FN6mjOYNDlPUkIXak7RmyOaiKYAvLAgQSBfSLPAffw="
+  },
+  {
+    "name": "adaptivecards",
+    "version": "2.11.3",
+    "file": "adaptivecards.NOTICES",
+    "url": "https://unpkg.com/adaptivecards@2.11.3/dist/adaptivecards.min.js.LICENSE.txt",
+    "integrity": "sha256-VqHS82gMEjrp41ydG45dWfdVVnwzYgGlD7j2YyIN6Qg="
+  },
+  {
+    "name": "adaptive-expressions",
+    "version": "4.11.0",
+    "file": "adaptive-expressions.js",
+    "url": "https://unpkg.com/adaptive-expressions@4.11.0/lib/browser.js",
+    "integrity": "sha256-yoEiPQ11U/5Z8jfJLGwxV9Via4HP+75d9jTiQtuCU70="
+  },
+  {
+    "name": "adaptive-expressions",
+    "version": "4.11.0",
+    "file": "adaptive-expressions.LICENSE",
+    "url": "https://raw.githubusercontent.com/microsoft/botbuilder-js/4.11.0/LICENSE",
+    "integrity": "sha256-J+vanVHwpWt+KBzNgjCicjbctRwF9ksHhp7PbpZdaLA="
+  },
+  {
+    "name": "adaptivecards-templating",
+    "version": "2.4.0-alpha.0+53352bb",
+    "file": "adaptivecards-templating.ts",
+    "url": "https://raw.githubusercontent.com/microsoft/AdaptiveCards/53352bb7c9ea7bda88ad3ee2fbd18f3e0c9a2c0a/source/nodejs/adaptivecards-templating/src/template-engine.ts",
+    "integrity": "sha256-glm4/RBL1MEXnYhKkt086ysFyevGLRZ009qHRTRpJao="
+  },
+  {
+    "name": "adaptivecards-templating",
+    "version": "2.4.0-alpha.0+53352bb",
+    "file": "adaptivecards-templating.package.json",
+    "url": "https://raw.githubusercontent.com/microsoft/AdaptiveCards/53352bb7c9ea7bda88ad3ee2fbd18f3e0c9a2c0a/source/nodejs/adaptivecards-templating/package.json",
+    "integrity": "sha256-gMTO98RpoyvHdQM31hjzmdOdLo1TEuhCHILP1WM28v0="
+  },
+  {
+    "name": "adaptivecards-templating",
+    "version": "2.4.0-alpha.0+53352bb",
+    "file": "adaptivecards-templating.LICENSE",
+    "url": "https://raw.githubusercontent.com/microsoft/AdaptiveCards/53352bb7c9ea7bda88ad3ee2fbd18f3e0c9a2c0a/LICENSE",
+    "integrity": "sha256-9FN6mjOYNDlPUkIXak7RmyOaiKYAvLAgQSBfSLPAffw="
+  },
+  {
+    "name": "adaptivecards-templating",
+    "version": "2.4.0-alpha.0+53352bb",
+    "file": "adaptivecards-templating.js",
+    "url": "https://raw.githubusercontent.com/microsoft/AdaptiveCards/53352bb7c9ea7bda88ad3ee2fbd18f3e0c9a2c0a/source/nodejs/adaptivecards-templating/src/template-engine.ts",
+    "compiler": "esbuild 0.28.2; unmodified official source",
+    "integrity": "sha256-+RQyAEtDZIdhCBoY1sxfKQYicHzXQQBha2jT/WaCy28="
+  }
+]

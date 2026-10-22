@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  --background-color-default: #fff; --border-color-default: #d1d9e0;
+  --text-color-default: #1f2328; --text-color-muted: #59636e; --color-focus-outline: #0969da;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --background-color-default: #0d1117; --border-color-default: #3d444d; --text-color-default: #f0f6fc; --text-color-muted: #9198a1; }
+}
+body { margin: 0; padding: 20px; background: var(--background-color-default); color: var(--text-color-default); font-family: var(--font-sans, "Segoe UI", sans-serif); font-size: var(--text-body-medium, 14px); line-height: var(--leading-body-medium, 20px); }
+header, main, section, details { max-width: 900px; margin: 0 auto 20px; }
+h1 { font-size: 26px; line-height: 32px; margin: 6px 0; font-weight: var(--font-weight-semibold, 600); }
+h2 { font-size: 19px; }
+.eyebrow, footer, #identity { color: var(--text-color-muted); overflow-wrap: anywhere; }
+fieldset { border: 0; min-width: 0; padding: 0; margin: 0; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+button, input, select, textarea { font: inherit; color: var(--text-color-default); background: var(--background-color-default); border: 1px solid var(--border-color-default); border-radius: 6px; box-sizing: border-box; padding: 8px; max-width: 100%; }
+button { cursor: pointer; min-height: 36px; }
+button:disabled { opacity: .55; cursor: default; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-focus-outline); outline-offset: 2px; }
+section, details, main { border: 1px solid var(--border-color-default); border-radius: 8px; padding: 16px; box-sizing: border-box; }
+label { display: block; margin: 12px 0 6px; }
+#reviews, #instruction, #outgoing { width: 100%; }
+#preview, #send { margin-top: 12px; }
+#status, #error, #conflict { padding: 10px; border: 1px solid var(--border-color-default); border-radius: 6px; overflow-wrap: anywhere; }
+#error, #conflict { border-left: 4px solid var(--true-color-red, #cf222e); white-space: pre-wrap; }
+pre, textarea { font-family: var(--font-mono, Consolas, monospace); font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.ac-input, .ac-pushButton { color: var(--text-color-default) !important; background: var(--background-color-default) !important; border: 1px solid var(--border-color-default) !important; }
+.ac-pushButton { border-radius: 6px; padding: 9px; }
+.ac-container, .ac-textBlock { overflow-wrap: anywhere; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[hidden] { display: none !important; }
+@media (max-width: 480px) { body { padding: 10px; } main, section { padding: 10px; } h1 { font-size: 22px; } }
