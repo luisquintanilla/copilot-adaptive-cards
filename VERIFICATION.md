@@ -32,6 +32,12 @@ verified on a conventional developer/CI environment at that initial local
 verification. They are not claimed as local passes. See the repository's
 Actions results for subsequent CI runs.
 
+The public CI workflow pins Ubuntu 24.04, which the pinned Playwright 1.56.1
+supports. The first publication run restored dependencies with `npm ci` but
+could not install browsers on the Ubuntu 26.04 image selected by
+`ubuntu-latest`. The runner pin fixes that compatibility mismatch without
+changing dependency versions, validation deadlines or runtime behavior.
+
 The packaging check also compares both archive hashes across repeated packaging
 of unchanged inputs on the current machine. File timestamps are normalized;
 Node compression avoids the current-time gzip header emitted by the local
